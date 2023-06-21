@@ -1,6 +1,5 @@
 {
 "id": "1"
-},
 "Tittle": "Sign up with Google option is not available"
 "Steps":[
 "1) Open the app in the browser"
@@ -11,3 +10,4 @@
 "Reportet": "Alexandr Polienko"
 "Severity": "High"
 "Priority": "High"
+}
