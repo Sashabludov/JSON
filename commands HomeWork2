@@ -60,17 +60,25 @@ CTRL+C
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.: 
 Нажимаем на файл "Bug_report.json" > Edit this file >
 {
-"id":1
-},
-"Tittle":"Sign up with Google option is not available"
-"Steps":[
-"1) Open the app in the browser"
-"2) Click on Sign up"
+"id": "1"
+"reporter": "Alexandr Polienko",
+"date": "2023-06-21",
+"title": "Bug in Login Functionality",
+"description": "There is a bug in the login functionality of the application. When users try to login with their credentials, an error message is displayed instead of successfully logging them in.",
+"stepsToReproduce": [
+"Open the application",
+"Click on the 'Login' button",
+"Enter valid username and password",
+"Click on the 'Submit' button"
 ],
-"Expect Resuls":"The available options are: -sign up Email. -Sign up with Facebook. -Sign up with Google"
-"Actual Resuls":"The available options are: -sign up Email. -Sign up with Facebook"
-"Reportet":"Alexandr Polienko"
-"Severity":"High"
-"Priority":"High"
+"expectedResult": "User should be successfully logged in",
+"actualResult": "Error message is displayed instead of successful login",
+"severity": "High",
+"priority": "High",
+"environment": {
+"operatingSystem": "Windows 11",
+"browser": "Chrome 140"
+}
+}
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit changes
  20. Синхронизировать внешний и локальный репозиторий JSON: git pull
